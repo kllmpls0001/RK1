@@ -47,7 +47,7 @@ label::selection{
     color: #EF0097;
 }
 .logo_index{
- user-select: none;
+	user-select: none;
 }
 .head_index{
     padding: 0 10%;
@@ -107,6 +107,19 @@ form div label{
     font-size: 1em;
 	background: #0ccc13;
 }
+
+.head_two{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition-property: all;
+}
+.head_two:hover{
+    transition: 0.5s;
+    transform: translate(+50px);
+}
 .description_text_title{
 	text-align: center;
 }
@@ -123,9 +136,9 @@ form div label{
     transition-property: all;
 }
 .what{
-    background: #9ef0a1;
+    background: url("../1-park/335694-svetik.jpg");
+	background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 .button:hover{
     transition: 0.3s;
@@ -142,9 +155,51 @@ form div label{
 	padding: 3% 10%;
 }
 
+.main{
+    display: flex;
+    padding: 5em;
+    width: 100%;
+    height: 300px;
+    background-color: #467847;
+    position: relative;
+    margin : 1em 0;
+}
+.main_menu{
+    color: white;
+    top:50%;
 
+}
+.main_menu ul li{
+	transition-property: all;
+	margin-top: 1em;
+	cursor: pointer;
+	user-select: none;
+}
+.main_menu ul li:hover{
+    transition: 0.2s;
+    color: silver;
+}
+.anime_object{
+    margin-left: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.anime_object img{
+	width: 75px;
+}
 
-
+.belka{
+    animation: a 2s ease-in-out infinite;
+}
+.utka{
+    animation: c 2s ease-in-out infinite;
+}
+.little_chicken{
+    animation: b 2s ease-in-out infinite;
+}
+.tree{
+    animation: d 2s ease-in-out infinite;
+}
 @media screen and (max-width: 900px) {
    .wrapper{
         padding: auto 0;
